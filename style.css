@@ -1,3 +1,14 @@
+:root {
+
+--burnt-orange: #C65A1E;
+--terracotta: #8A3A12;
+--clay-brown: #5E2A1A;
+--cream: #F4EFE9;
+--charcoal: #2B2B2B;
+
+}
+
+
 /* =========================
    CSS RESET / BASE STYLES
 ========================= */
@@ -12,8 +23,8 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #ffffff;
+  color: var(--charcoal);
+  background: var(--cream);
 }
 
 /* =========================
@@ -68,7 +79,8 @@ section {
 
 header {
   padding: 20px;
-  border-bottom: 1px solid #eee;
+  background: var(--terracotta);
+  color: white;
   position: relative;
 }
 
@@ -81,10 +93,7 @@ header {
 .menu-toggle {
   background: none;
   border: none;
-  color: #333;
-  font-size: 2rem;
-  padding: 0;
-  cursor: pointer;
+  color: white;
 }
 
 .mobile-nav {
@@ -111,8 +120,12 @@ header {
   display: block;
   padding: 12px 0;
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: 500;
+}
+
+.mobile-nav a:hover {
+  color: var(--burnt-orange);
 }
 
 /* =========================
@@ -167,10 +180,14 @@ select {
 button[type="submit"] {
   padding: 10px 16px;
   border: none;
-  background: #333;
+  background: var(--burnt-orange);
   color: white;
   cursor: pointer;
   border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background: var(--clay-brown);
 }
 
 /* =========================
@@ -179,7 +196,13 @@ button[type="submit"] {
 
 footer {
   padding: 20px;
-  border-top: 1px solid #eee;
+  background: var(--terracotta);
+  color: white;
   text-align: center;
   font-size: 0.9rem;
+}
+
+#welcome img {
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
