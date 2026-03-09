@@ -48,11 +48,12 @@ h1, h2, h3 {
 
 header h1 {
   font-family: 'Beau Rivage', cursive;
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   margin: 0;
   color: #fff7ef;
   line-height: 0.95;
   padding-right: 10px;
+  flex: 1;
 }
 
 p {
@@ -106,7 +107,7 @@ header {
   background: none;
   border: none;
   color: #fff7ef;
-  padding-left: 10px;
+  margin-left: auto;
 }
 
 .mobile-nav {
