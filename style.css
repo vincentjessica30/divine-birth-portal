@@ -155,6 +155,24 @@ button[type="submit"]:hover {
 background-color: var(--clay-brown);
 }
 
+.floating-book-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 999;
+  background-color: #9a4316;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.floating-book-btn:hover {
+  transform: translateY(-2px);
+}
+
 /* =========================
 FOOTER
 ========================= */
