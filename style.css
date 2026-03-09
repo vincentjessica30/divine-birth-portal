@@ -58,6 +58,15 @@ p {
 margin-bottom: 1rem;
 }
 
+ul li::before {
+content: "☽";
+position: absolute;
+left: 0;
+color: var(--burnt-orange);
+font-size: 0.9rem;
+top: 2px;
+}
+
 /* =========================
 HEADER
 ========================= */
