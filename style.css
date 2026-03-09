@@ -25,9 +25,10 @@ background-color: var(--cream);
 }
 
 img {
-max-width: 100%;
-height: auto;
-display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 /* =========================
@@ -123,11 +124,6 @@ padding: 20px;
 section {
 max-width: 900px;
 margin: 0 auto 60px auto;
-}
-
-#welcome img {
-margin-bottom: 20px;
-border-radius: 8px;
 }
 
 /* =========================
