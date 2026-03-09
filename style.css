@@ -1,13 +1,10 @@
 :root {
-
---burnt-orange: #C65A1E;
---terracotta: #8A3A12;
---clay-brown: #5E2A1A;
---cream: #F4EFE9;
---charcoal: #2B2B2B;
-
+  --burnt-orange: #c65a1e;
+  --terracotta: #8a3a12;
+  --clay-brown: #5e2a1a;
+  --cream: #f4efe9;
+  --charcoal: #2b2b2b;
 }
-
 
 /* =========================
    CSS RESET / BASE STYLES
@@ -24,12 +21,8 @@ body {
   font-family: system-ui, -apple-system, Arial, sans-serif;
   line-height: 1.6;
   color: var(--charcoal);
-  background: var(--cream);
+  background-color: var(--cream);
 }
-
-/* =========================
-   IMG
-========================= */
 
 img {
   max-width: 100%;
@@ -41,19 +34,11 @@ img {
    TYPOGRAPHY
 ========================= */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
   line-height: 1.2;
-}
-
-header h1 {
-  font-family: 'Beau Rivage', cursive;
-  font-size: 2.0rem;
-  margin: 0;
-  color: #fff7ef;
-  line-height: 0.95;
-  padding-right: 10px;
-  flex: 1;
 }
 
 p {
@@ -65,49 +50,38 @@ ul {
 }
 
 /* =========================
-   LAYOUT
+   HEADER / NAVIGATION
 ========================= */
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin: 0 auto 60px auto;
-  max-width: 900px;
-}
-
-/* =========================
-   NAVIGATION - MOBILE FIRST
-========================= */
-
-.mobile-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0 0;
-}
 
 header {
-  background-color: #8c3a12;
+  background-color: var(--terracotta);
   padding: 18px 24px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Beau Rivage", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff7ef;
 }
 
 .menu-toggle {
-  font-size: 1.8rem;
   background: none;
   border: none;
   color: #fff7ef;
-  margin-left: auto;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1;
 }
 
 .mobile-nav {
@@ -122,7 +96,7 @@ header {
 
 .mobile-nav ul {
   list-style: none;
-  padding: 10px 0;
+  padding: 14px 0 0 0;
   margin: 0;
 }
 
@@ -132,7 +106,7 @@ header {
 
 .mobile-nav a {
   display: block;
-  padding: 12px 0;
+  padding: 10px 0;
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -143,36 +117,21 @@ header {
 }
 
 /* =========================
-   DESKTOP STYLES
+   LAYOUT
 ========================= */
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
+main {
+  padding: 20px;
+}
 
-  .mobile-nav {
-    max-height: none;
-    overflow: visible;
-  }
+section {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
 
-  .mobile-nav ul {
-    display: flex;
-    gap: 20px;
-    margin: 0;
-  }
-
-  .mobile-nav li {
-    margin-bottom: 0;
-  }
-
-  main {
-    padding: 40px;
-  }
-
-  section {
-    margin: 0 auto 80px auto;
-  }
+#welcome img {
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 /* =========================
@@ -194,14 +153,14 @@ select {
 button[type="submit"] {
   padding: 10px 16px;
   border: none;
-  background: var(--burnt-orange);
+  background-color: var(--burnt-orange);
   color: white;
   cursor: pointer;
   border-radius: 4px;
 }
 
 button[type="submit"]:hover {
-  background: var(--clay-brown);
+  background-color: var(--clay-brown);
 }
 
 /* =========================
@@ -210,13 +169,45 @@ button[type="submit"]:hover {
 
 footer {
   padding: 20px;
-  background: var(--terracotta);
+  background-color: var(--terracotta);
   color: white;
   text-align: center;
   font-size: 0.9rem;
 }
 
-#welcome img {
-  margin-bottom: 20px;
-  border-radius: 8px;
+/* =========================
+   DESKTOP STYLES
+========================= */
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-nav {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 14px 0 0 0;
+  }
+
+  .mobile-nav li {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  section {
+    margin: 0 auto 80px auto;
+  }
 }
