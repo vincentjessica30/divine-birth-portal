@@ -46,6 +46,12 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+header h1 {
+  font-family: 'Beau Rivage', cursive;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
 p {
   margin-bottom: 1rem;
 }
