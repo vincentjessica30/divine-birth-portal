@@ -58,13 +58,28 @@ p {
 margin-bottom: 1rem;
 }
 
+/* Custom moon bullets */
+
+ul {
+list-style: none;
+padding-left: 0;
+margin-top: 10px;
+margin-bottom: 25px;
+}
+
+ul li {
+position: relative;
+padding-left: 26px;
+margin-bottom: 8px;
+}
+
 ul li::before {
 content: "☽";
 position: absolute;
 left: 0;
+top: 2px;
 color: var(--burnt-orange);
 font-size: 0.9rem;
-top: 2px;
 }
 
 /* =========================
