@@ -157,7 +157,7 @@ background-color: var(--clay-brown);
 
 .floating-book-btn {
   position: fixed;
-  bottom: 80px;
+  bottom: 30px;
   right: 20px;
   z-index: 999;
   background-color: #9a4316;
