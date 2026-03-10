@@ -56,37 +56,44 @@ margin-top: 20px;
 
 /* Mission statement styling */
 
+#mission {
+position: relative;
+padding: 80px 40px;
+text-align: center;
+}
+
 #mission h2 {
 font-family: 'Cormorant Garamond', serif;
 font-size: 2.4rem;
-text-align: center;
 line-height: 1.4;
-position: relative;
-padding: 40px 30px;
+max-width: 650px;
+margin: 0 auto;
 }
 
-/* Decorative quote marks */
+/* Giant decorative quote marks */
 
-#mission h2::before {
+#mission::before {
 content: "“";
 font-family: 'Cormorant Garamond', serif;
-font-size: 6rem;
+font-size: 120px;
 position: absolute;
-left: 0;
+left: 10px;
 top: -20px;
 opacity: 0.25;
 color: var(--terracotta);
+line-height: 1;
 }
 
-#mission h2::after {
+#mission::after {
 content: "”";
 font-family: 'Cormorant Garamond', serif;
-font-size: 6rem;
+font-size: 120px;
 position: absolute;
-right: 0;
-bottom: -30px;
+right: 10px;
+bottom: -40px;
 opacity: 0.25;
 color: var(--terracotta);
+line-height: 1;
 }
 
 p {
