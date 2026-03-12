@@ -57,17 +57,17 @@ margin-top: 20px;
 /* Mission statement styling */
 
 #mission {
-position: relative;
-padding: 80px 40px;
-text-align: center;
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 #mission h2 {
-font-family: 'Cormorant Garamond', serif;
-font-size: 2.4rem;
-line-height: 1.4;
-max-width: 650px;
-margin: 0 auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /* Giant decorative quote marks */
