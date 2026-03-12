@@ -313,7 +313,7 @@ footer {
   #mission h2 {
     font-size: clamp(2rem, 7vw, 2.8rem);
     line-height: 1.4;
-    max-width: 13ch;
+    max-width: 25ch;
   }
 
   #mission::before {
