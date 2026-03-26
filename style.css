@@ -1,68 +1,74 @@
 :root {
   --burnt-orange: #c65a1e;
   --terracotta: #8a3a12;
-  --clay-brown: #5e2a1a;
   --cream: #f4efe9;
   --charcoal: #2b2b2b;
 }
 
-/* =========================
-   RESET
-========================= */
-
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Arial, sans-serif;
-  line-height: 1.6;
   color: var(--charcoal);
   background-color: var(--cream);
+  overflow-x: hidden;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+/* ================= HEADER ================= */
 
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 0;
+header {
+  background-color: var(--terracotta);
+  padding: 18px 24px;
 }
 
-h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
+.header-top {
+  display: flex;
+  align-items: center;
 }
 
-h3 {
-  font-size: 1.3rem;
-  margin-top: 30px;
+header h1 {
+  font-family: "Beau Rivage", cursive;
+  color: #fff7ef;
+  margin: 0;
 }
 
-h4 {
-  font-size: 1.1rem;
-  margin-top: 20px;
+.menu-toggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
 }
 
-p {
-  margin-bottom: 1rem;
+/* ================= NAV ================= */
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
-/* =========================
-   MISSION STATEMENT
-========================= */
+.mobile-nav.open {
+  max-height: 500px;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+/* ================= HERO ================= */
 
 #mission {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
+  margin: 0;
 }
 
 #mission img {
@@ -70,6 +76,7 @@ p {
   height: 100%;
   object-fit: cover;
   filter: brightness(70%);
+  border-radius: 0;
 }
 
 .mission-overlay {
@@ -83,301 +90,35 @@ p {
 }
 
 .mission-overlay h2 {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-/* Giant decorative quote marks */
-
-/*
-#mission::before {
-  content: "“";
   font-family: "Cormorant Garamond", serif;
-  font-size: 150px;
-  position: absolute;
-  left: 60px;
-  top: -10px;
-  opacity: 0.25;
-  color: var(--terracotta);
-  line-height: 1;
-}
-
-#mission::after {
-  content: "”";
-  font-family: "Cormorant Garamond", serif;
-  font-size: 150px;
-  position: absolute;
-  right: 60px;
-  bottom: 10px;
-  opacity: 0.25;
-  color: var(--terracotta);
-  line-height: 1;
-}
-*/
-
-/* =========================
-   CUSTOM BULLETS
-========================= */
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
-ul li {
-  position: relative;
-  padding-left: 26px;
-  margin-bottom: 8px;
-}
-
-ul li::before {
-  content: "☽";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: var(--burnt-orange);
-  font-size: 0.9rem;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-  background-color: var(--terracotta);
-  padding: 18px 24px;
-}
-
-.header-top {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-header h1 {
-  font-family: "Beau Rivage", cursive;
   font-size: 2rem;
-  margin: 0;
-  color: #fff7ef;
-  line-height: 1;
+  line-height: 1.4;
 }
 
-.menu-toggle {
-  margin-left: auto;
-  background: none;
-  border: none;
-  color: #fff7ef;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-}
-
-/* =========================
-   MOBILE NAV
-========================= */
-
-.mobile-nav {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.mobile-nav.open {
-  max-height: 500px;
-}
-
-.mobile-nav ul {
-  list-style: none;
-  padding: 15px 0 0 0;
-  margin: 0;
-}
-
-.mobile-nav li {
-  margin-bottom: 10px;
-}
-
-.mobile-nav a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 10px 0;
-  font-weight: 500;
-}
-
-.mobile-nav a:hover {
-  color: var(--burnt-orange);
-}
-
-/* =========================
-   MAIN LAYOUT
-========================= */
+/* ================= MAIN ================= */
 
 main {
-  padding: 20px;
+  padding: 0; /* 👈 important */
 }
 
 section {
+  padding: 20px;
   max-width: 900px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
 }
 
-.package-section {
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e4dbd3;
-}
+/* ================= ABOUT ================= */
 
-/* =========================
-   SERVICE CARDS
-========================= */
-
-.service-card {
-  background: white;
-  padding: 24px;
-  margin: 30px 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  border-left: 6px solid var(--burnt-orange);
-}
-
-.service-card h4 {
-  margin-top: 0;
-}
-
-/* =========================
-   FORM
-========================= */
-
-input,
-textarea,
-select {
+#about img {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: inherit;
+  border-radius: 8px;
 }
 
-button[type="submit"] {
-  padding: 10px 16px;
-  border: none;
-  background-color: var(--burnt-orange);
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button[type="submit"]:hover {
-  background-color: var(--clay-brown);
-}
-
-/* =========================
-   FLOATING BUTTON
-========================= */
-
-.floating-book-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 999;
-  background-color: #9a4316;
-  color: white;
-  text-decoration: none;
-  padding: 14px 22px;
-  border-radius: 30px;
-  font-weight: 600;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
-
-.floating-book-btn:hover {
-  transform: translateY(-2px);
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 footer {
-  padding: 20px;
   background-color: var(--terracotta);
   color: white;
   text-align: center;
-  font-size: 0.9rem;
-}
-
-/* =========================
-   MOBILE ADJUSTMENTS
-========================= */
-
-@media (max-width: 767px) {
-  #mission {
-    padding: 55px 20px;
-  }
-
-  #mission h2 {
-    font-size: clamp(2rem, 7vw, 2.8rem);
-    line-height: 1.4;
-    max-width: 25ch;
-  }
-
-  #mission::before {
-    font-size: 110px;
-    left: 18px;
-    top: 0;
-  }
-  #mission::after {
-    font-size: 110px;
-    right: 18px;
-    bottom: 18px;
-  }
-
-  .floating-book-btn {
-    bottom: 20px;
-    right: 16px;
-    padding: 12px 20px;
-    font-size: 1rem;
-  }
-}
-
-/* =========================
-   DESKTOP NAV
-========================= */
-
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 2.8rem;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .mobile-nav {
-    max-height: none;
-    overflow: visible;
-  }
-
-  .mobile-nav ul {
-    display: flex;
-    gap: 20px;
-    padding-top: 15px;
-  }
-
-  .mobile-nav li {
-    margin-bottom: 0;
-  }
-
-  main {
-    padding: 40px;
-  }
-
-  section {
-    margin-bottom: 80px;
-  }
+  padding: 20px;
 }
