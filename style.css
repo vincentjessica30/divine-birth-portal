@@ -43,6 +43,7 @@ h4 {
 }
 
 h2 {
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
   margin-bottom: 20px;
 }
@@ -321,7 +322,6 @@ footer {
     left: 18px;
     top: 0;
   }
-
   #mission::after {
     font-size: 110px;
     right: 18px;
