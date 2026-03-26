@@ -67,8 +67,11 @@ header h1 {
 #mission {
   position: relative;
   height: 100vh;
-  width: 100vw;
+
+  width: 100%;
+  padding: 0;
   margin: 0;
+  max-width: none;
 }
 
 #mission img {
