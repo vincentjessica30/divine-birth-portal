@@ -24,13 +24,6 @@ body {
   background-color: var(--cream);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
 /* =========================
    TYPOGRAPHY
 ========================= */
@@ -97,6 +90,7 @@ p {
 
 /* Giant decorative quote marks */
 
+/*
 #mission::before {
   content: "“";
   font-family: "Cormorant Garamond", serif;
@@ -120,6 +114,7 @@ p {
   color: var(--terracotta);
   line-height: 1;
 }
+*/
 
 /* =========================
    CUSTOM BULLETS
