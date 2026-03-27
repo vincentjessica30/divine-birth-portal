@@ -61,27 +61,6 @@ body {
 }
 
 
-/* ================= NAV 
-
-.mobile-nav {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.mobile-nav.open {
-  max-height: 500px;
-}
-
-.mobile-nav a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
-}
-
-== */
-
 /* ================= HERO ================= */
 
 #mission {
@@ -171,6 +150,7 @@ section {
 }
 
 .about-image-wrapper h2 {
+  font-family: "Cormorant Garamond", serif;
   position: absolute;
   top: -20px;
   left: 20px;
