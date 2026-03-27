@@ -153,6 +153,10 @@ section {
 
 /* ================= ABOUT ================= */
 
+#about {
+  padding: 0;
+}
+
 #about img {
   width: 100%;
   border-radius: 0;
