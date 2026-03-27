@@ -109,7 +109,6 @@ body {
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(to bottom, transparent, var(--cream));
 }
 
 .mission-overlay {
