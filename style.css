@@ -121,10 +121,13 @@ body {
 /* ================= CONTACT HERO ================= */
 
 .contact-hero {
+  position: relative;
+  height: 30vh;
 
-  height: 40vh;
   width: 100%;
-  overflow: hidden;
+  max-width: none;   /* 🔥 breaks out of 900px prison */
+  padding: 0;        /* 🔥 removes that annoying space */
+  margin: 0;         /* 🔥 removes centering gap */
 }
 
 .contact-hero img {
