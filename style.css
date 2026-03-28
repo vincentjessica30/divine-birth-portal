@@ -11,11 +11,13 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Arial, sans-serif;
+  font-family: 'Lora', serif;
   color: var(--charcoal);
   background-color: var(--cream);
   overflow-x: hidden;
 }
+
+
 
 /* ================= HEADER ================= */
 
@@ -146,9 +148,77 @@ main {
 }
 
 section {
-  padding: 20px;
+  padding: 30px 20px;
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* ================= SERVICES ================= */
+
+.package-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.package-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: var(--terracotta);
+  margin-bottom: 10px;
+}
+
+.package-section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 20px;
+}
+
+.package-section h4 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 15px;
+  color: var(--burnt-orange);
+}
+
+.package-section p {
+  font-family: 'Lora', serif;
+  line-height: 1.7;
+}
+
+/* individual service cards */
+
+.service-card {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--burnt-orange);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+}
+
+.service-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.service-card p {
+  font-family: 'Lora', serif;
+}
+
+.service-card ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.service-card li {
+  margin-bottom: 6px;
 }
 
 /* ================= ABOUT ================= */
@@ -217,6 +287,56 @@ section {
   background: var(--burnt-orange);
 }
 
+/* ================= RESOURCES ================= */
+
+.resource-group {
+  margin-bottom: 40px;
+}
+
+.resource-group h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--terracotta);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 5px;
+}
+
+.resource-card {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-2px);
+}
+
+.resource-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 5px;
+}
+
+.resource-card p {
+  font-family: 'Lora', serif;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.resource-card a {
+  font-family: 'Lora', serif;
+  text-decoration: none;
+  color: var(--burnt-orange);
+  font-weight: 500;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
 
 /* ================= FOOTER ================= */
 
@@ -276,12 +396,4 @@ section {
 .footer-contact a:hover i {
   transform: translateY(-3px);
   opacity: 0.7;
-}
-
-
-/*=== BODY ===*/
-
-
-body {
-  margin: 0;
 }
