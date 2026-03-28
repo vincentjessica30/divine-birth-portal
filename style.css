@@ -174,7 +174,7 @@ section {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 10px;
-  padding: 20px 20px 60px;
+  padding: 20px 20px 30px;
 }
 
 .about-content p {
@@ -185,7 +185,7 @@ section {
 }
 
 .about-cta {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 20px;
   text-align: center;
 }
