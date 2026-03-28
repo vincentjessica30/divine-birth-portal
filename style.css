@@ -160,6 +160,8 @@ section {
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  z-index: 2; /* 👈 THIS IS WHY IT'S GONE */
+
 }
 
 #about img {
