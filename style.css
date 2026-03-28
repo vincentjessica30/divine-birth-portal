@@ -170,6 +170,21 @@ section {
   filter: brightness(90%);
 }
 
+.about-content {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px 20px 60px;
+}
+
+.about-content p {
+  font-family: 'lora', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+
 /* ================= FOOTER ================= */
 
 footer {
