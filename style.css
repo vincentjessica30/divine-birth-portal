@@ -112,6 +112,12 @@ body {
   height: 60vh;
 }
 
+/* ================= RESOURCES HERO ================= */
+
+.resources-page #mission {
+  height: 60vh;
+}
+
 /* ================= CONTACT HERO ================= */
 
 .contact-hero {
