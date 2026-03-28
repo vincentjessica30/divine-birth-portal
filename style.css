@@ -145,12 +145,6 @@ section {
   padding: 0;
 }
 
-.about-image-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.2);
-}
 
 .about-image-wrapper {
   position: relative;
@@ -158,10 +152,10 @@ section {
 
 .about-image-wrapper h2 {
   position: absolute;
-  bottom: 10px;
+  bottom: 24px;
   left: 20px;
   color: white;
-  font-size: 3rem; /* bigger, yes */
+  font-size: 2.2rem; /* bigger, yes */
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
@@ -170,6 +164,7 @@ section {
 #about img {
   width: 100%;
   display: block;
+  filter: brightness(90%);
 }
 
 /* ================= FOOTER ================= */
