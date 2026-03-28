@@ -106,6 +106,12 @@ body {
   line-height: 1.4;
 }
 
+/* ================= SERVICES HERO ================= */
+
+.services-page #mission {
+  height: 60vh;
+}
+
 /* ================= CONTACT HERO ================= */
 
 .contact-hero {
